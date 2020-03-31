@@ -1,0 +1,15 @@
+FROM alpine:latest
+
+RUN apk add --no-cache \
+	ca-certificates \
+	nghttp2 \
+	openssl
+
+ENV CURL_VERSION 7.67.0
+
+ENTRYPOINT ["/usr/local/bin/curl"]
+CMD ["-h"]
+
+COPY local.conf /etc/fonts/local.conf
+
+
