@@ -1,3 +1,3 @@
 
-FROM r.addops.soft.360.cn/qixiao/jenkins-slave:base
+FROM openjdk:7
 USER root:root
