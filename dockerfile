@@ -1,2 +1,2 @@
-FROM sonarsource/sonar-scanner-cli:4.4
+docker pull docker:19.03
 USER root:root
